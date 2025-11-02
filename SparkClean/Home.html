@@ -1,0 +1,130 @@
+<!-- FILE: index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SparkClean — Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="SparkClean home">
+        <!-- Inline SVG logo -->
+        <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1">
+              <stop offset="0" stop-color="#1E88E5"/>
+              <stop offset="1" stop-color="#81C784"/>
+            </linearGradient>
+          </defs>
+          <circle cx="32" cy="32" r="30" fill="url(#g)" />
+          <path d="M20 38c0-8 12-18 12-18s12 10 12 18-5 14-12 14S20 46 20 38z" fill="#fff" opacity="0.95"/>
+          <path d="M29 24l3 3 6-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="brand">SparkClean</span>
+      </a>
+
+      <nav class="nav">
+        <a href="Home.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="About.html">About</a>
+        <a class="btn small" href="#book">Book</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Clean. Fresh. Sparkling Every Time.</h1>
+          <p class="lead">Professional and eco-friendly cleaning for homes, offices and student accommodation — fast, reliable and affordable.</p>
+          <div class="actions">
+            <a class="btn primary" href="services.html">See Services</a>
+            <a class="btn outline" href="#book">Book a Cleaning</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <!-- Placeholder image; swap with real image or embed video -->
+          <img src="https://images.pexels.com/photos/4498137/pexels-photo-4498137.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="SparkClean before and after"/>
+          <p class="caption">Before & after — SparkClean in action</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature">
+        <h3>Eco-friendly Products</h3>
+        <p>We use non-toxic, biodegradable cleaners that are safe for families and pets.</p>
+      </article>
+      <article class="feature">
+        <h3>Trained Team</h3>
+        <p>All staff are trained, background checked and customer-oriented.</p>
+      </article>
+      <article class="feature">
+        <h3>Flexible Scheduling</h3>
+        <p>Book weekly, fortnightly, or one-off cleans at times that suit you.</p>
+      </article>
+    </section>
+
+    <section class="how container">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><strong>Book:</strong> Choose service and preferred date.</li>
+        <li><strong>We clean:</strong> Our team arrives on time and works quickly.</li>
+        <li><strong>Relax:</strong> Enjoy your refreshed space.</li>
+      </ol>
+    </section>
+
+    <section id="book" class="booking container">
+      <h2>Book a Cleaning</h2>
+      <form class="form" action="mailto:sparkcleanservices@gmail.com" method="post" enctype="text/plain">
+        <div class="form-row">
+          <label>Full name<input type="text" name="name" required></label>
+          <label>Phone number<input type="tel" name="phone" required></label>
+        </div>
+        <div class="form-row">
+          <label>Email address<input type="email" name="email" required></label>
+          <label>Service
+            <select name="service">
+              <option>Home cleaning</option>
+              <option>Office cleaning</option>
+              <option>Deep cleaning</option>
+              <option>Student accommodation</option>
+            </select>
+          </label>
+        </div>
+        <label>Preferred date<input type="date" name="date"></label>
+        <label>Additional notes<textarea name="notes" rows="3"></textarea></label>
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Send booking request</button>
+          <a class="btn outline" href="tel:+27684567890">Call us: +27 68 456 7890</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>SparkClean</strong>
+        <p>Johannesburg, South Africa • sparkcleanservices@gmail.com</p>
+      </div>
+      <nav class="footer-nav">
+        <a href="Home.html">Home</a>
+        <a href="Services.html">Services</a>
+        <a href="About.html">About</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+
+
+
