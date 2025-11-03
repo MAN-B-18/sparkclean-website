@@ -1,92 +1,185 @@
-:root{
-  --brand-blue:#1E88E5;
-  --brand-green:#81C784;
-  --bg:#ffffff;
-  --muted:#6b7280;
-  --max-width:1100px;
+/* General */
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
+  color: #2c3e50;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
-*{box-sizing:border-box;margin:0;padding:0;}
-body{
-  font-family:"Open Sans",system-ui,Arial;
-  margin:0;
-  color:#111;
-  background:var(--bg);
-  line-height:1.5;
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-/* --- Layout Wrappers --- */
-.container{max-width:var(--max-width);margin:0 auto;padding:1.5rem;}
-.header-inner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;}
-
-/* --- Header & Nav --- */
-.logo{display:flex;align-items:center;gap:.6rem;text-decoration:none;color:inherit;}
-.logo .brand{font-family:'Montserrat',sans-serif;font-weight:700;}
-.site-header{
-  background:linear-gradient(180deg,rgba(255,255,255,0.95),rgba(255,255,255,0.9));
-  position:sticky;top:0;z-index:50;border-bottom:1px solid #eee;
+.logo h1 {
+  margin: 0;
+  font-size: 1.5rem;
 }
-.nav a{margin-left:1rem;text-decoration:none;color:var(--muted);}
-.nav a.btn.small{padding:.35rem .6rem;border-radius:6px;border:1px solid var(--brand-blue);color:var(--brand-blue);}
-.nav a.active{color:var(--brand-blue);font-weight:600;}
 
-/* --- Hero Section --- */
-.hero{padding:3rem 0;background:linear-gradient(180deg,#f7fbff,white);}
-.hero-inner{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center;}
-.hero-copy h1{font-family:'Montserrat',sans-serif;font-size:2.2rem;margin:0 0 .5rem;}
-.lead{color:var(--muted);margin-top:0;}
-.actions{margin-top:1rem;}
-.btn{display:inline-block;padding:.75rem 1.1rem;border-radius:10px;text-decoration:none;font-weight:600;}
-.btn.primary{background:var(--brand-blue);color:white;}
-.btn.outline{border:1px solid #ddd;color:var(--brand-blue);background:transparent;}
-.btn.small{padding:.4rem .6rem;font-size:.85rem;}
-.hero-media img{width:100%;border-radius:12px;box-shadow:0 6px 20px rgba(30,88,165,0.08);}
-.caption{font-size:.85rem;color:var(--muted);margin-top:.4rem;}
+.tagline {
+  font-size: 0.9rem;
+  margin: 5px 0 15px;
+  color: #e67e22;
+}
 
-/* --- Features --- */
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:2rem 0;}
-.feature{background:#fff;padding:1.25rem;border-radius:10px;box-shadow:0 4px 18px rgba(0,0,0,0.03);}
+/* Navigation */
+.navbar {
+  position: relative;
+}
 
-/* --- Steps / How --- */
-.how{background:#fff;padding:1.25rem;border-radius:10px;margin-bottom:2rem;}
-.steps{padding-left:1rem;}
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
 
-/* --- Booking Form --- */
-.booking{background:linear-gradient(90deg,rgba(30,136,229,0.04),rgba(129,199,132,0.03));padding:1.25rem;border-radius:10px;}
-.form{display:grid;gap:.75rem;}
-.form-row{display:flex;gap:.75rem;flex-wrap:wrap;}
-label{display:block;font-size:.95rem;}
-input,select,textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid #e5e7eb;}
-.form-actions{display:flex;gap:.75rem;align-items:center;flex-wrap:wrap;}
+.menu li a {
+  color: #e67e22;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-/* --- Services Page --- */
-.service-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0;}
-.service-card{background:#fff;padding:1rem;border-radius:10px;box-shadow:0 6px 18px rgba(15,23,42,0.04);}
-.price{font-weight:700;margin-top:.5rem;}
+.menu li a:hover {
+  text-decoration: underline;
+}
 
-/* --- About Page --- */
-.about-main .founder{display:flex;gap:1rem;align-items:center;margin-top:1rem;}
-.founder-photo img{width:220px;border-radius:10px;max-width:100%;}
-.values ul{list-style:disc;margin-left:1.2rem;}
+/* Mobile menu icon */
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #e67e22;
+}
 
-/* --- Footer --- */
-.site-footer{border-top:1px solid #eee;padding:1rem 0;margin-top:2rem;}
-.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;text-align:center;}
-.footer-nav a{margin-left:1rem;color:var(--muted);text-decoration:none;}
+#menu-toggle {
+  display: none;
+}
+
+.hero {
+  padding: 40px 20px;
+}
+
+.hero-video {
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  margin-top: 20px;
+}
+
+.text-block {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* Services */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.process {
+  text-align: left;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: 20px auto;
+}
+
+input, textarea, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: inherit;
+}
+
+button {
+  background: #e67e22;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #cf6b18;
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  font-size: 0.9rem;
+  margin-top: 30px;
+}
 
 /* --- Responsive Design --- */
-@media(max-width:900px){
-  .hero-inner{grid-template-columns:1fr;}
-  .features{grid-template-columns:1fr;}
-  .service-list{grid-template-columns:1fr;}
-  .about-main .founder{flex-direction:column;text-align:center;}
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #2c3e50;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .hero-video {
+    width: 100%;
+  }
+
+  header {
+    text-align: left;
+  }
 }
 
-@media(max-width:600px){
-  .container{padding:1rem;}
-  .hero{padding:2rem 0;}
-  .hero-copy h1{font-size:1.7rem;}
-  .btn{padding:.6rem .9rem;}
-  .footer-inner{flex-direction:column;gap:.5rem;}
-  .nav a{display:inline-block;margin:.3rem;}
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  .tagline {
+    font-size: 0.8rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  form {
+    width: 90%;
+  }
 }
