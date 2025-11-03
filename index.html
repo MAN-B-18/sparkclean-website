@@ -7,16 +7,20 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="logo">
-      <h1>The Dean of Digital Agency</h1>
-      <p class="tagline">Connecting Student Talent with Real Opportunities</p>
+      <img src="logo.png" alt="The Dean of Digital Agency Logo" class="logo-img" />
+      <div>
+        <h1>The Dean of Digital Agency</h1>
+        <p class="tagline">Connecting Student Talent with Real Opportunities</p>
+      </div>
     </div>
+
     <nav class="navbar">
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="about.html">About/Contact</a></li>
       </ul>
@@ -24,21 +28,25 @@
   </header>
 
   <section class="hero">
-    <h2>Empowering Creativity. Building Careers.</h2>
-    <p>We connect student photographers, designers, and writers with campus clients who need quality social media content.</p>
-    <video autoplay class="hero-video">
+    <div class="hero-content">
+      <h2>Empowering Creativity. Building Careers.</h2>
+      <p>We connect student photographers, designers, and writers with campus clients who need quality social media content.</p>
+      <a href="services.html" class="btn">Explore Our Services</a>
+    </div>
+
+    <video autoplay muted loop playsinline class="hero-video">
       <source src="promo.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </section>
 
   <section class="mission">
-    <div class="text-block">
+    <div class="mission-card">
       <h2>Our Mission</h2>
       <p>To create opportunities for student creatives by linking them with real-world clients while delivering professional content services to campus clubs, departments, and local businesses.</p>
     </div>
 
-    <div class="text-block">
+    <div class="mission-card">
       <h2>Our Vision</h2>
       <p>To become the go-to creative agency for every university and college campus across South Africa.</p>
     </div>
@@ -49,5 +57,3 @@
   </footer>
 </body>
 </html>
-
-
