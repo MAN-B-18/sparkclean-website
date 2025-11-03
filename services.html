@@ -1,97 +1,49 @@
-
-<!-- FILE: services.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>SparkClean — Services</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - The Campus Content Creator Agency</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html" aria-label="SparkClean home">
-        <svg width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="g2" x1="0" x2="1">
-              <stop offset="0" stop-color="#1E88E5"/>
-              <stop offset="1" stop-color="#81C784"/>
-            </linearGradient>
-          </defs>
-          <circle cx="32" cy="32" r="30" fill="url(#g2)" />
-          <path d="M20 38c0-8 12-18 12-18s12 10 12 18-5 14-12 14S20 46 20 38z" fill="#fff" opacity="0.95"/>
-          <path d="M29 24l3 3 6-6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <span class="brand">SparkClean</span>
-      </a>
-
-      <nav class="nav">
-        <a href="index.html">Home</a>
-        <a href="services.html" class="active">Services</a>
-        <a href="info.html">About</a>
-        <a class="btn small" href="index.html#book">Book</a>
-      </nav>
+  <header>
+    <div class="logo">
+      <h1>Our Services</h1>
     </div>
+    <nav class="navbar">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About/Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main class="container">
-    <section class="services-intro">
-      <h1>Our Cleaning Services</h1>
-      <p class="lead">Choose the package that suits your needs. All services use eco-friendly products and trained teams.</p>
-    </section>
-
-    <section class="service-list">
-      <article class="service-card">
-        <h3>Home Cleaning</h3>
-        <p>Standard cleaning for living rooms, bedrooms, kitchens and bathrooms. Includes dusting, vacuuming, mopping and sanitising.</p>
-        <p class="price">From R250 / room</p>
-      </article>
-
-      <article class="service-card">
-        <h3>Office Cleaning</h3>
-        <p>Daily or weekly cleaning options for offices, including desk sanitisation and communal area cleaning.</p>
-        <p class="price">From R600 / session</p>
-      </article>
-
-      <article class="service-card">
-        <h3>Deep Cleaning</h3>
-        <p>Move-in/move-out and post-renovation cleans that cover high dust, appliances, grout and more.</p>
-        <p class="price">From R900 / job</p>
-      </article>
-
-      <article class="service-card">
-        <h3>Student Accommodation</h3>
-        <p>Fast and affordable room cleans tailored to students and shared flats.</p>
-        <p class="price">From R150 / room</p>
-      </article>
-    </section>
-
-    <section class="cta">
-      <h2>Want a Quote?</h2>
-      <p>Send us your details and we'll get back with a free, no-obligation quote.</p>
-      <a class="btn primary" href="index.html#book">Get a Free Quote</a>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <strong>SparkClean</strong>
-        <p>Johannesburg, South Africa • sparkcleanservices@gmail.com</p>
-      </div>
-      <nav class="footer-nav">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="info.html">About</a>
-      </nav>
+  <section class="services">
+    <h2>What We Offer</h2>
+    <div class="grid">
+      <div class="card"><h3>Photography & Videography</h3><p>Event coverage, promotional videos, and social content.</p></div>
+      <div class="card"><h3>Graphic Design</h3><p>Posters, banners, and social media visuals.</p></div>
+      <div class="card"><h3>Content Writing</h3><p>Captions, blog posts, and copywriting for brands.</p></div>
+      <div class="card"><h3>Social Media Management</h3><p>Posting, branding, and community engagement.</p></div>
     </div>
+
+    <h2>How It Works</h2>
+    <ol class="process">
+      <li>Clients submit content requests.</li>
+      <li>We match them with the best student creative.</li>
+      <li>We manage deadlines, quality checks, and delivery.</li>
+    </ol>
+
+    <h2>Pricing & Value</h2>
+    <p>We charge a small management fee per project while ensuring fair payment for student creators. Clients save time, students gain income, and everyone wins!</p>
+  </section>
+
+  <footer>
+    <p>© 2025 The Campus Content Creator Agency</p>
   </footer>
 </body>
 </html>
-
-
-
