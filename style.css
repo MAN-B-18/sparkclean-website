@@ -1,152 +1,166 @@
-/* General */
+/* Global Style */
 body {
-  font-family: "Poppins", sans-serif;
-  background: #f9f9f9;
-  color: #2c3e50;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  text-align: center;
+  color: #222;
+  background-color: #fafafa;
 }
 
-header {
-  background: #2c3e50;
-  color: white;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+/* Header */
+header.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1b2a;
+  color: #fff;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-img {
+  width: 60px;
+  height: auto;
 }
 
 .logo h1 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .tagline {
+  color: #fca311;
   font-size: 0.9rem;
-  margin: 5px 0 15px;
-  color: #e67e22;
+  margin: 3px 0;
 }
 
-/* Navigation */
+/* Navbar */
 .navbar {
   position: relative;
 }
 
 .menu {
   list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
-  justify-content: center;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .menu li a {
-  color: #e67e22;
+  color: #fca311;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: 0.3s;
 }
 
-.menu li a:hover {
-  text-decoration: underline;
+.menu li a:hover,
+.menu li a.active {
+  color: #fff;
 }
 
-/* Mobile menu icon */
+/* Mobile Menu */
 .menu-icon {
   display: none;
+  color: #fca311;
   font-size: 1.8rem;
   cursor: pointer;
-  color: #e67e22;
 }
 
 #menu-toggle {
   display: none;
 }
 
+/* Hero Section */
 .hero {
-  padding: 40px 20px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
 }
 
 .hero-video {
-  width: 80%;
-  max-width: 700px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin-top: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.4);
 }
 
-.text-block {
-  max-width: 700px;
-  margin: 20px auto;
+.hero-content {
+  padding: 120px 20px;
+  z-index: 1;
 }
 
-/* Services */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 20px;
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.card {
-  background: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.process {
-  text-align: left;
+.hero p {
+  font-size: 1.1rem;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 0 auto 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 400px;
-  margin: 20px auto;
-}
-
-input, textarea, button {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-family: inherit;
-}
-
-button {
-  background: #e67e22;
-  color: white;
-  border: none;
-  cursor: pointer;
+.btn {
+  background: #fca311;
+  color: #0d1b2a;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
   transition: 0.3s;
 }
 
-button:hover {
-  background: #cf6b18;
+.btn:hover {
+  background: #fff;
 }
 
+/* Mission Section */
+.mission {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.mission-card {
+  background: #f1f1f1;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
 footer {
-  background: #2c3e50;
-  color: white;
+  background: #0d1b2a;
+  color: #fff;
+  text-align: center;
   padding: 15px;
   font-size: 0.9rem;
-  margin-top: 30px;
 }
 
-/* --- Responsive Design --- */
+/* Responsive */
 @media (max-width: 768px) {
   .menu {
     display: none;
     flex-direction: column;
-    background: #2c3e50;
+    background: #0d1b2a;
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
+    padding: 15px 0;
   }
 
   #menu-toggle:checked + .menu-icon + .menu {
@@ -157,29 +171,81 @@ footer {
     display: block;
   }
 
-  .hero-video {
-    width: 100%;
+  .hero h2 {
+    font-size: 1.8rem;
   }
 
-  header {
-    text-align: left;
+  .hero-content {
+    padding: 100px 20px;
   }
 }
-
-@media (max-width: 480px) {
-  .logo h1 {
-    font-size: 1.2rem;
-  }
-
-  .tagline {
-    font-size: 0.8rem;
-  }
-
-  .card {
-    padding: 15px;
-  }
-
-  form {
-    width: 90%;
-  }
+.page-header {
+  text-align: center;
+  background: #0d1b2a;
+  color: #fff;
+  padding: 60px 20px;
 }
+
+.services-grid, .about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.service-card, .about-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.service-card:hover, .about-card:hover {
+  transform: translateY(-5px);
+}
+
+.cta-section {
+  text-align: center;
+  background: #fca311;
+  color: #0d1b2a;
+  padding: 60px 20px;
+}
+
+.contact-form-section {
+  background: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button {
+  background: #0d1b2a;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background: #fca311;
+  color: #0d1b2a;
+}
+
