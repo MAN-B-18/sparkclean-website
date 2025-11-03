@@ -1,50 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Services - The Dean of Digital Agency</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | The Dean of Digital Agency</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="logo">
-      <h1>Our Services</h1>
+      <img src="logo.png" alt="The Dean of Digital Agency Logo" class="logo-img" />
+      <div>
+        <h1>The Dean of Digital Agency</h1>
+        <p class="tagline">Empowering Student Creatives</p>
+      </div>
     </div>
+
     <nav class="navbar">
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
         <li><a href="about.html">About/Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="services">
-    <h2>What We Offer</h2>
-    <div class="grid">
-      <div class="card"><h3>Photography & Videography</h3><p>Event coverage, promotional videos, and social content.</p></div>
-      <div class="card"><h3>Graphic Design</h3><p>Posters, banners, and social media visuals.</p></div>
-      <div class="card"><h3>Content Writing</h3><p>Captions, blog posts, and copywriting for brands.</p></div>
-      <div class="card"><h3>Social Media Management</h3><p>Posting, branding, and community engagement.</p></div>
+  <section class="page-header">
+    <h2>Our Creative Services</h2>
+    <p>We connect young digital talent with brands, clubs, and organizations that need their skills.</p>
+  </section>
+
+  <section class="services-grid">
+    <div class="service-card">
+      <h3>🎥 Social Media Content</h3>
+      <p>Photography, videography, and graphic design for Instagram, TikTok, and more. Students bring your brand to life.</p>
     </div>
 
-    <h2>How It Works</h2>
-    <ol class="process">
-      <li>Clients submit content requests.</li>
-      <li>We match them with the best student creative.</li>
-      <li>We manage deadlines, quality checks, and delivery.</li>
-    </ol>
+    <div class="service-card">
+      <h3>🖥️ Web Design</h3>
+      <p>Modern, responsive websites built by trained student developers — ideal for clubs and small businesses.</p>
+    </div>
 
-    <h2>Pricing & Value</h2>
-    <p>We charge a small management fee per project while ensuring fair payment for student creators. Clients save time, students gain income, and everyone wins!</p>
+    <div class="service-card">
+      <h3>🧠 Branding</h3>
+      <p>Logo design, brand identity kits, and digital storytelling that reflect your unique style and purpose.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>📈 Digital Marketing</h3>
+      <p>Content strategy, social media management, and analytics to boost engagement and reach your audience effectively.</p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Need a Creative Team for Your Next Project?</h2>
+    <p>Work with our talented student creators and bring your digital presence to life.</p>
+    <a href="about.html" class="btn">Get in Touch</a>
   </section>
 
   <footer>
-    <p>© 2025 The Dean of Digital Agency</p>
+    <p>© 2025 The Dean of Digital Agency | All Rights Reserved</p>
   </footer>
 </body>
 </html>
-
