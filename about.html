@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About & Contact - The Dean of Digital Agency</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About & Contact | The Dean of Digital Agency</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
+  <header class="header">
     <div class="logo">
-      <h1>About & Contact</h1>
+      <img src="logo.png" alt="The Dean of Digital Agency Logo" class="logo-img" />
+      <div>
+        <h1>The Dean of Digital Agency</h1>
+        <p class="tagline">Digital Talent. Real Impact.</p>
+      </div>
     </div>
+
     <nav class="navbar">
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">&#9776;</label>
       <ul class="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="about.html">About/Contact</a></li>
+        <li><a href="about.html" class="active">About/Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="about">
-    <h2>Our Story</h2>
-    <p>The Dean of Digital Agency was founded by a group of student entrepreneurs who saw an opportunity to help campus creatives find paid projects while serving real clients. We believe in the power of collaboration, creativity, and opportunity.</p>
+  <section class="page-header">
+    <h2>About Us</h2>
+    <p>We are a student-driven digital agency passionate about creativity, collaboration, and community.</p>
+  </section>
 
+  <section class="about-grid">
+    <div class="about-card">
+      <h3>🌍 Our Story</h3>
+      <p>The Dean of Digital Agency was founded to give students hands-on experience while helping organizations create impactful digital media. We believe in talent, opportunity, and innovation through teamwork.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>💡 What We Stand For</h3>
+      <ul>
+        <li>Empowering student creativity</li>
+        <li>Delivering professional-quality work</li>
+        <li>Building bridges between students and clients</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="contact-form-section">
     <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:campuscreatoragency@gmail.com">deanofdigitalagency@gmail.com</a></p>
-    <p>Instagram: <a href="#">@Dean of Digital Agency</a></p>
+    <p>Ready to collaborate? Fill out the form below and our team will get in touch.</p>
 
-    <form>
-      <h3>Send us a message</h3>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send Message</button>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
     </form>
   </section>
 
   <footer>
-    <p>© 2025 The Dean of Digital Agency</p>
+    <p>© 2025 The Dean of Digital Agency | All Rights Reserved</p>
   </footer>
 </body>
 </html>
-
