@@ -24,7 +24,7 @@ header.header {
 }
 
 .logo-img {
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
@@ -248,5 +248,6 @@ footer {
   background: #fca311;
   color: #0d1b2a;
 }
+
 
 
